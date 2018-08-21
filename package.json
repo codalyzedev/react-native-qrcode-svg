@@ -5,7 +5,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "prepare": "rm -rf example",
+    "prepare": "rimraf example",
     "test": "jest",
     "test-update": "npm run test -- --updateSnapshot",
     "lint-staged": "lint-staged",
@@ -57,6 +57,7 @@
     "publish": "^0.6.0",
     "react": "^16.0.0",
     "react-test-renderer": "^16.0.0",
+    "rimraf": "^2.6.2",
     "standard": "^10.0.3"
   }
 }
